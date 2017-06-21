@@ -1,9 +1,9 @@
 //
 //  Event.swift
-//  ArchitectureGuideTemplate
+//  EventNode
 //
 //  Created by Rumata on 11/4/16.
-//  Copyright © 2016 Yalantis. All rights reserved.
+//  Copyright © 2016 DarthRumata. All rights reserved.
 //
 
 public protocol Event {
