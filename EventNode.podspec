@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
    s.watchos.deployment_target = "2.0"
    s.tvos.deployment_target = "9.0"
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source       = { :git => "https://github.com/DarthRumata/EventNode.git" }
+  s.source       = { :git => "https://github.com/DarthRumata/EventNode.git", :tag => s.version }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files  = "Pod"
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
