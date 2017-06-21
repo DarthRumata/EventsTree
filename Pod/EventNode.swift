@@ -1,6 +1,6 @@
 //
 //  EventNode.swift
-//  ArchitectureGuideTemplate
+//  EventNode
 //
 //  Created by Rumata on 12/12/16.
 //  Copyright © 2016 Yalantis. All rights reserved.
