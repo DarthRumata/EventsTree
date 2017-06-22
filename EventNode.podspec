@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.name         = "EventNode"
+  s.name         = "Events"
   s.version      = "0.1.0"
   s.summary      = "iOS library for sending and handling events"
   s.description  = <<-DESC
