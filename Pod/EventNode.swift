@@ -100,6 +100,7 @@ open class EventNode: EventDrivenInterface {
   }
   
   public func addHandler<T: Event>(_ captureMode: CaptureMode = .onPropagate, _ handler: @escaping (T) -> ()) {
+    precondition(!captureMode.isDisjoint([.onPropagate, .onRaise]), "You should add onPropagate or/and onRaise mode")
     let container = EventHandlerContainer(handler: handler, captureMode: captureMode)
     eventHandlers.append(container)
   }
