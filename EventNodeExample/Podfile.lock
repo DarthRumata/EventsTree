@@ -1,0 +1,21 @@
+PODS:
+  - Events (0.1.0)
+
+DEPENDENCIES:
+  - Events (from `https://github.com/DarthRumata/EventNode.git`)
+
+EXTERNAL SOURCES:
+  Events:
+    :git: https://github.com/DarthRumata/EventNode.git
+
+CHECKOUT OPTIONS:
+  Events:
+    :commit: 136d32e47f5f30cbd1ed7252bd2b3f9a2daa84ac
+    :git: https://github.com/DarthRumata/EventNode.git
+
+SPEC CHECKSUMS:
+  Events: 962e5d5bceeb941e62358351c606aa38baae5995
+
+PODFILE CHECKSUM: 117b60a42b11cbc3a34f343790c4d28361fb6d96
+
+COCOAPODS: 1.2.1

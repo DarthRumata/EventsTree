@@ -1,0 +1,12 @@
+target 'EventNodeExample' do
+  use_frameworks!
+  platform :ios, '9.0'
+
+  pod 'Events', :git => 'https://github.com/DarthRumata/EventNode.git'
+
+  target 'EventNodeExampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
