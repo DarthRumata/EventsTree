@@ -46,6 +46,7 @@ class TreeNodeView: UIView {
         }
 
         if case .bubbleUserEvent(let sharedTime) = event {
+          /// TODO: Need to provide more convient implimentation via separate serial queue
           let scheduledTime = sharedTime.startTime
           sharedTime.startTime = sharedTime.startTime + 1
           DispatchQueue.main.asyncAfter(deadline: scheduledTime) {
@@ -68,7 +69,9 @@ class TreeNodeView: UIView {
           DispatchQueue.main.asyncAfter(deadline: scheduledTime) {
             strongSelf.highlightedState = .onRaise
             DispatchQueue.main.asyncAfter(deadline: scheduledTime + 1) {
-              strongSelf.highlightedState = .none
+              if strongSelf.highlightedState == .onRaise {
+                strongSelf.highlightedState = .none
+              }
             }
           }
         }
