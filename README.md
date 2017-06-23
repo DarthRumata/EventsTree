@@ -11,4 +11,8 @@ You can deal with it using NSNotificationCenter, or you can pull callbacks/deleg
 
 # How to install
 
+### Cocoapods
+
+pod 'Events'
+
 # How to use
