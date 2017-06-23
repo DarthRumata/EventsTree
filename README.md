@@ -1,4 +1,4 @@
-__Made in Yalantis__
+__Made in Yalantis__. Inspired by https://github.com/mmrmmlrr/ModelsTreeKit
 
 # Motivation
 
