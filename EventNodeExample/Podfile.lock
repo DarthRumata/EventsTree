@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Events:
-    :commit: 136d32e47f5f30cbd1ed7252bd2b3f9a2daa84ac
+    :commit: ed289d728d394ca8cb548d65aa4353d9be9afa44
     :git: https://github.com/DarthRumata/EventNode.git
 
 SPEC CHECKSUMS:
