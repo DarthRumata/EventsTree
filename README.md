@@ -1,4 +1,4 @@
-## Made in Yalantis
+__Made in Yalantis__
 
 # Motivation
 
