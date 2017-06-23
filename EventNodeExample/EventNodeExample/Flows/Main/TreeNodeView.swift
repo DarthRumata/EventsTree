@@ -9,9 +9,34 @@
 import Foundation
 import UIKit
 import Events
+import AMPopTip
+
+extension TreeNodeView {
+
+  enum Event: Events.Event {
+    case nodeSelected(TreeNodeView?)
+    case bubbleUserEvent(SharedTime)
+  }
+
+  /// This is hack needed to avoid consuming all events in Event
+  /// There is a big lack of current implementation - need to be fixed
+  struct UserGeneratedEvent: Events.Event {}
+
+  class SharedTime {
+    var startTime: DispatchTime = .now()
+  }
+
+}
 
 @IBDesignable
 class TreeNodeView: UIView {
+
+  @IBInspectable
+  var title: String = "" {
+    didSet {
+      self.titleLabel.text = title
+    }
+  }
 
   var eventNode: EventNode! {
     didSet {
@@ -35,8 +60,26 @@ class TreeNodeView: UIView {
           return
         }
 
-        if event == .userSentEvent && strongSelf.selectedState == .selected {
+        guard strongSelf.selectedState == .selected else {
+          return
+        }
+
+        switch event {
+        case .userSentEvent:
           strongSelf.eventNode.raise(event: Event.bubbleUserEvent(SharedTime()))
+          strongSelf.eventNode.raise(event: UserGeneratedEvent())
+
+        case .userAddedHandler(let handlerInfo):
+          strongSelf.eventNode.addHandler(handlerInfo.handlerMode) { (event: UserGeneratedEvent) in
+            strongSelf.popTip.show(
+              text: handlerInfo.tipText,
+              direction: .down,
+              maxWidth: 150,
+              in: strongSelf.superview!,
+              from: strongSelf.frame,
+              duration: 2
+            )
+          }
         }
       }
 
@@ -82,13 +125,6 @@ class TreeNodeView: UIView {
   @IBOutlet fileprivate weak var titleLabel: UILabel!
   @IBOutlet fileprivate weak var eventDirectionMarker: UIImageView!
 
-  @IBInspectable
-  var title: String = "" {
-    didSet {
-      self.titleLabel.text = title
-    }
-  }
-
   fileprivate var selectedState: SelectedState = .normal {
     didSet {
       updateBackground()
@@ -100,6 +136,7 @@ class TreeNodeView: UIView {
       updateIcon()
     }
   }
+  private let popTip = PopTip()
 
   // MARK: Init
 
@@ -124,19 +161,6 @@ class TreeNodeView: UIView {
   @IBAction func didTapOnView() {
     let event = Event.nodeSelected(self)
     eventNode.raise(event: event)
-  }
-
-}
-
-extension TreeNodeView {
-
-  enum Event: Events.Event {
-    case nodeSelected(TreeNodeView?)
-    case bubbleUserEvent(SharedTime)
-  }
-
-  class SharedTime {
-    var startTime: DispatchTime = .now()
   }
 
 }
@@ -170,11 +194,11 @@ private extension TreeNodeView {
       }
     }
   }
-  
+
   func updateBackground() {
     backgroundColor = selectedState.color
   }
-
+  
   func updateIcon() {
     eventDirectionMarker.image = highlightedState.icon
   }

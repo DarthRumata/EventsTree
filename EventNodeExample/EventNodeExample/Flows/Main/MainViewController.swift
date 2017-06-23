@@ -9,6 +9,15 @@
 import UIKit
 import Events
 
+extension MainViewController {
+
+  enum Event: Events.Event {
+    case userSentEvent
+    case userAddedHandler(HandlerInfo)
+  }
+  
+}
+
 /// EventNode is used here only for TreeViews to make main functionality more clear
 /// Of course it can be used for other tasks occurred in this app
 class MainViewController: UIViewController {
@@ -59,22 +68,15 @@ class MainViewController: UIViewController {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let destinationId = String(describing: AddHandlerViewController.self)
     let controller = storyboard.instantiateViewController(withIdentifier: destinationId) as! AddHandlerViewController
-    controller.saveHandler = { handlerInfo in
-      print(handlerInfo)
+    controller.saveHandler = { [weak self] handlerInfo in
+      let event = Event.userAddedHandler(handlerInfo)
+      self?.rootNodeView.eventNode.raise(event: event)
     }
     present(controller, animated: true, completion: nil)
   }
 
   @IBAction func didTapRaiseEvent(_ sender: Any) {
     rootNodeView.eventNode.raise(event: Event.userSentEvent)
-  }
-
-}
-
-extension MainViewController {
-
-  enum Event: Events.Event {
-    case userSentEvent
   }
 
 }

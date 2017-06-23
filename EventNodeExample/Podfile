@@ -3,6 +3,7 @@ target 'EventNodeExample' do
   platform :ios, '9.0'
 
   pod 'Events', :git => 'https://github.com/DarthRumata/EventNode.git'
+  pod 'AMPopTip', '2.1.6'
 
   target 'EventNodeExampleTests' do
     inherit! :search_paths
