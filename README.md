@@ -1,5 +1,4 @@
-# EventNode
-Library for sending and handling events for iOS/macOS/tvOS/watchOS applications
+## Made in Yalantis
 
 # Motivation
 
