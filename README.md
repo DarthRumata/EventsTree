@@ -29,6 +29,9 @@ Every node can have only one parent and unlimited number of children.
 
 ### Cocoapods
 
-pod 'Events'
+Write in podfile:
+`pod 'EventsTree'`
+Then execute command in console:
+`pod install`
 
 # How to use
