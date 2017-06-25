@@ -8,16 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4920F6E36A56B238DCF2BCCC /* Pods_EventNodeExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153AA5998ED34A084A57751A /* Pods_EventNodeExample.framework */; };
-		92C763C61EFACBF9007F2C30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C763C51EFACBF9007F2C30 /* AppDelegate.swift */; };
-		92C763CB1EFACBF9007F2C30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C763C91EFACBF9007F2C30 /* Main.storyboard */; };
-		92C763CD1EFACBF9007F2C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C763CC1EFACBF9007F2C30 /* Assets.xcassets */; };
-		92C763D01EFACBF9007F2C30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C763CE1EFACBF9007F2C30 /* LaunchScreen.storyboard */; };
-		92C763DB1EFACBF9007F2C30 /* EventNodeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C763DA1EFACBF9007F2C30 /* EventNodeExampleTests.swift */; };
-		92C763FB1EFBFCEC007F2C30 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C763F71EFBFCEC007F2C30 /* MainViewController.swift */; };
-		92C763FC1EFBFCEC007F2C30 /* TreeNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C763F81EFBFCEC007F2C30 /* TreeNodeView.swift */; };
-		92C763FD1EFBFCEC007F2C30 /* TreeNodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C763F91EFBFCEC007F2C30 /* TreeNodeView.xib */; };
-		92C764001EFBFD4E007F2C30 /* AddHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C763FF1EFBFD4E007F2C30 /* AddHandlerViewController.swift */; };
-		92C764031EFBFD82007F2C30 /* MWSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C764021EFBFD82007F2C30 /* MWSegmentedControl.swift */; };
+		9238D8881F006F1D00D19D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8781F006F1D00D19D0F /* AppDelegate.swift */; };
+		9238D8891F006F1D00D19D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9238D8791F006F1D00D19D0F /* Assets.xcassets */; };
+		9238D88A1F006F1D00D19D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238D87A1F006F1D00D19D0F /* LaunchScreen.storyboard */; };
+		9238D88B1F006F1D00D19D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238D87C1F006F1D00D19D0F /* Main.storyboard */; };
+		9238D88C1F006F1D00D19D0F /* MWSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D87F1F006F1D00D19D0F /* MWSegmentedControl.swift */; };
+		9238D88D1F006F1D00D19D0F /* AddHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8821F006F1D00D19D0F /* AddHandlerViewController.swift */; };
+		9238D88E1F006F1D00D19D0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8841F006F1D00D19D0F /* MainViewController.swift */; };
+		9238D88F1F006F1D00D19D0F /* TreeNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8851F006F1D00D19D0F /* TreeNodeView.swift */; };
+		9238D8901F006F1D00D19D0F /* TreeNodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9238D8861F006F1D00D19D0F /* TreeNodeView.xib */; };
+		9238D8911F006F1D00D19D0F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9238D8871F006F1D00D19D0F /* Info.plist */; };
+		9238D8971F006F9B00D19D0F /* EventNodeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8931F006F8D00D19D0F /* EventNodeExampleTests.swift */; };
+		9238D8981F006F9E00D19D0F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9238D8941F006F8D00D19D0F /* Info.plist */; };
 		A263D87DF56A6E0331BAC456 /* Pods_EventNodeExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B699077A846A869AD681A /* Pods_EventNodeExampleTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,20 +37,20 @@
 		153AA5998ED34A084A57751A /* Pods_EventNodeExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventNodeExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2B8DAAA45663AD69C5F782 /* Pods-EventNodeExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExample/Pods-EventNodeExample.release.xcconfig"; sourceTree = "<group>"; };
 		750CCC70BB759AF9A202C469 /* Pods-EventNodeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExample/Pods-EventNodeExample.debug.xcconfig"; sourceTree = "<group>"; };
-		92C763C21EFACBF9007F2C30 /* EventNodeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventNodeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92C763C51EFACBF9007F2C30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92C763CA1EFACBF9007F2C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		92C763CC1EFACBF9007F2C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		92C763CF1EFACBF9007F2C30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		92C763D11EFACBF9007F2C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92C763D61EFACBF9007F2C30 /* EventNodeExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventNodeExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		92C763DA1EFACBF9007F2C30 /* EventNodeExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNodeExampleTests.swift; sourceTree = "<group>"; };
-		92C763DC1EFACBF9007F2C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92C763F71EFBFCEC007F2C30 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		92C763F81EFBFCEC007F2C30 /* TreeNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeView.swift; sourceTree = "<group>"; };
-		92C763F91EFBFCEC007F2C30 /* TreeNodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeNodeView.xib; sourceTree = "<group>"; };
-		92C763FF1EFBFD4E007F2C30 /* AddHandlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHandlerViewController.swift; sourceTree = "<group>"; };
-		92C764021EFBFD82007F2C30 /* MWSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWSegmentedControl.swift; sourceTree = "<group>"; };
+		9238D8781F006F1D00D19D0F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9238D8791F006F1D00D19D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9238D87B1F006F1D00D19D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9238D87D1F006F1D00D19D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9238D87F1F006F1D00D19D0F /* MWSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWSegmentedControl.swift; sourceTree = "<group>"; };
+		9238D8821F006F1D00D19D0F /* AddHandlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHandlerViewController.swift; sourceTree = "<group>"; };
+		9238D8841F006F1D00D19D0F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9238D8851F006F1D00D19D0F /* TreeNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeView.swift; sourceTree = "<group>"; };
+		9238D8861F006F1D00D19D0F /* TreeNodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeNodeView.xib; sourceTree = "<group>"; };
+		9238D8871F006F1D00D19D0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9238D8931F006F8D00D19D0F /* EventNodeExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventNodeExampleTests.swift; sourceTree = "<group>"; };
+		9238D8941F006F8D00D19D0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92C763C21EFACBF9007F2C30 /* EventsTreeiOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsTreeiOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C763D61EFACBF9007F2C30 /* EventsTreeiOSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTreeiOSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A048893C41867DEFDABF3E13 /* Pods-EventNodeExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADD2FCFE8264F8EDD8BD0B8D /* Pods-EventNodeExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2B699077A846A869AD681A /* Pods_EventNodeExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventNodeExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,11 +96,69 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9238D8771F006F1D00D19D0F /* EventTreeiOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				9238D8781F006F1D00D19D0F /* AppDelegate.swift */,
+				9238D8791F006F1D00D19D0F /* Assets.xcassets */,
+				9238D87A1F006F1D00D19D0F /* LaunchScreen.storyboard */,
+				9238D87C1F006F1D00D19D0F /* Main.storyboard */,
+				9238D87E1F006F1D00D19D0F /* External */,
+				9238D8801F006F1D00D19D0F /* Flows */,
+				9238D8871F006F1D00D19D0F /* Info.plist */,
+			);
+			path = EventTreeiOSExample;
+			sourceTree = "<group>";
+		};
+		9238D87E1F006F1D00D19D0F /* External */ = {
+			isa = PBXGroup;
+			children = (
+				9238D87F1F006F1D00D19D0F /* MWSegmentedControl.swift */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		9238D8801F006F1D00D19D0F /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				9238D8811F006F1D00D19D0F /* AddHandler */,
+				9238D8831F006F1D00D19D0F /* Main */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		9238D8811F006F1D00D19D0F /* AddHandler */ = {
+			isa = PBXGroup;
+			children = (
+				9238D8821F006F1D00D19D0F /* AddHandlerViewController.swift */,
+			);
+			path = AddHandler;
+			sourceTree = "<group>";
+		};
+		9238D8831F006F1D00D19D0F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9238D8841F006F1D00D19D0F /* MainViewController.swift */,
+				9238D8851F006F1D00D19D0F /* TreeNodeView.swift */,
+				9238D8861F006F1D00D19D0F /* TreeNodeView.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9238D8921F006F8D00D19D0F /* EventTreeiOSExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				9238D8931F006F8D00D19D0F /* EventNodeExampleTests.swift */,
+				9238D8941F006F8D00D19D0F /* Info.plist */,
+			);
+			path = EventTreeiOSExampleTests;
+			sourceTree = "<group>";
+		};
 		92C763B91EFACBF9007F2C30 = {
 			isa = PBXGroup;
 			children = (
-				92C763C41EFACBF9007F2C30 /* EventNodeExample */,
-				92C763D91EFACBF9007F2C30 /* EventNodeExampleTests */,
+				9238D8921F006F8D00D19D0F /* EventTreeiOSExampleTests */,
+				9238D8771F006F1D00D19D0F /* EventTreeiOSExample */,
 				92C763C31EFACBF9007F2C30 /* Products */,
 				54F3C7DBF6F2E08FFE07BFBE /* Pods */,
 				3B52415A56CD7109D2639450 /* Frameworks */,
@@ -108,76 +168,18 @@
 		92C763C31EFACBF9007F2C30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92C763C21EFACBF9007F2C30 /* EventNodeExample.app */,
-				92C763D61EFACBF9007F2C30 /* EventNodeExampleTests.xctest */,
+				92C763C21EFACBF9007F2C30 /* EventsTreeiOSExample.app */,
+				92C763D61EFACBF9007F2C30 /* EventsTreeiOSExampleTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		92C763C41EFACBF9007F2C30 /* EventNodeExample */ = {
-			isa = PBXGroup;
-			children = (
-				92C764011EFBFD82007F2C30 /* External */,
-				92C763F41EFBFCEC007F2C30 /* Flows */,
-				92C763C51EFACBF9007F2C30 /* AppDelegate.swift */,
-				92C763C91EFACBF9007F2C30 /* Main.storyboard */,
-				92C763CC1EFACBF9007F2C30 /* Assets.xcassets */,
-				92C763CE1EFACBF9007F2C30 /* LaunchScreen.storyboard */,
-				92C763D11EFACBF9007F2C30 /* Info.plist */,
-			);
-			path = EventNodeExample;
-			sourceTree = "<group>";
-		};
-		92C763D91EFACBF9007F2C30 /* EventNodeExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				92C763DA1EFACBF9007F2C30 /* EventNodeExampleTests.swift */,
-				92C763DC1EFACBF9007F2C30 /* Info.plist */,
-			);
-			path = EventNodeExampleTests;
-			sourceTree = "<group>";
-		};
-		92C763F41EFBFCEC007F2C30 /* Flows */ = {
-			isa = PBXGroup;
-			children = (
-				92C763FE1EFBFD4E007F2C30 /* AddHandler */,
-				92C763F61EFBFCEC007F2C30 /* Main */,
-			);
-			path = Flows;
-			sourceTree = "<group>";
-		};
-		92C763F61EFBFCEC007F2C30 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				92C763F71EFBFCEC007F2C30 /* MainViewController.swift */,
-				92C763F81EFBFCEC007F2C30 /* TreeNodeView.swift */,
-				92C763F91EFBFCEC007F2C30 /* TreeNodeView.xib */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		92C763FE1EFBFD4E007F2C30 /* AddHandler */ = {
-			isa = PBXGroup;
-			children = (
-				92C763FF1EFBFD4E007F2C30 /* AddHandlerViewController.swift */,
-			);
-			path = AddHandler;
-			sourceTree = "<group>";
-		};
-		92C764011EFBFD82007F2C30 /* External */ = {
-			isa = PBXGroup;
-			children = (
-				92C764021EFBFD82007F2C30 /* MWSegmentedControl.swift */,
-			);
-			path = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		92C763C11EFACBF9007F2C30 /* EventNodeExample */ = {
+		92C763C11EFACBF9007F2C30 /* EventsTreeiOSExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92C763DF1EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventNodeExample" */;
+			buildConfigurationList = 92C763DF1EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventsTreeiOSExample" */;
 			buildPhases = (
 				EE7B219573F162C3C85B06DA /* [CP] Check Pods Manifest.lock */,
 				92C763BE1EFACBF9007F2C30 /* Sources */,
@@ -190,14 +192,14 @@
 			);
 			dependencies = (
 			);
-			name = EventNodeExample;
+			name = EventsTreeiOSExample;
 			productName = EventNodeExample;
-			productReference = 92C763C21EFACBF9007F2C30 /* EventNodeExample.app */;
+			productReference = 92C763C21EFACBF9007F2C30 /* EventsTreeiOSExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		92C763D51EFACBF9007F2C30 /* EventNodeExampleTests */ = {
+		92C763D51EFACBF9007F2C30 /* EventsTreeiOSExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92C763E21EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventNodeExampleTests" */;
+			buildConfigurationList = 92C763E21EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventsTreeiOSExampleTests" */;
 			buildPhases = (
 				F3EED00BDC90BF6457051CD2 /* [CP] Check Pods Manifest.lock */,
 				92C763D21EFACBF9007F2C30 /* Sources */,
@@ -211,9 +213,9 @@
 			dependencies = (
 				92C763D81EFACBF9007F2C30 /* PBXTargetDependency */,
 			);
-			name = EventNodeExampleTests;
+			name = EventsTreeiOSExampleTests;
 			productName = EventNodeExampleTests;
-			productReference = 92C763D61EFACBF9007F2C30 /* EventNodeExampleTests.xctest */;
+			productReference = 92C763D61EFACBF9007F2C30 /* EventsTreeiOSExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -240,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 92C763BD1EFACBF9007F2C30 /* Build configuration list for PBXProject "EventNodeExample" */;
+			buildConfigurationList = 92C763BD1EFACBF9007F2C30 /* Build configuration list for PBXProject "EventsTreeiOSExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -253,8 +255,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92C763C11EFACBF9007F2C30 /* EventNodeExample */,
-				92C763D51EFACBF9007F2C30 /* EventNodeExampleTests */,
+				92C763C11EFACBF9007F2C30 /* EventsTreeiOSExample */,
+				92C763D51EFACBF9007F2C30 /* EventsTreeiOSExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,10 +266,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C763D01EFACBF9007F2C30 /* LaunchScreen.storyboard in Resources */,
-				92C763CD1EFACBF9007F2C30 /* Assets.xcassets in Resources */,
-				92C763FD1EFBFCEC007F2C30 /* TreeNodeView.xib in Resources */,
-				92C763CB1EFACBF9007F2C30 /* Main.storyboard in Resources */,
+				9238D88B1F006F1D00D19D0F /* Main.storyboard in Resources */,
+				9238D8891F006F1D00D19D0F /* Assets.xcassets in Resources */,
+				9238D8901F006F1D00D19D0F /* TreeNodeView.xib in Resources */,
+				9238D8911F006F1D00D19D0F /* Info.plist in Resources */,
+				9238D88A1F006F1D00D19D0F /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9238D8981F006F9E00D19D0F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,11 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C764001EFBFD4E007F2C30 /* AddHandlerViewController.swift in Sources */,
-				92C763FC1EFBFCEC007F2C30 /* TreeNodeView.swift in Sources */,
-				92C764031EFBFD82007F2C30 /* MWSegmentedControl.swift in Sources */,
-				92C763FB1EFBFCEC007F2C30 /* MainViewController.swift in Sources */,
-				92C763C61EFACBF9007F2C30 /* AppDelegate.swift in Sources */,
+				9238D88D1F006F1D00D19D0F /* AddHandlerViewController.swift in Sources */,
+				9238D88C1F006F1D00D19D0F /* MWSegmentedControl.swift in Sources */,
+				9238D8881F006F1D00D19D0F /* AppDelegate.swift in Sources */,
+				9238D88E1F006F1D00D19D0F /* MainViewController.swift in Sources */,
+				9238D88F1F006F1D00D19D0F /* TreeNodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C763DB1EFACBF9007F2C30 /* EventNodeExampleTests.swift in Sources */,
+				9238D8971F006F9B00D19D0F /* EventNodeExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,26 +403,26 @@
 /* Begin PBXTargetDependency section */
 		92C763D81EFACBF9007F2C30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 92C763C11EFACBF9007F2C30 /* EventNodeExample */;
+			target = 92C763C11EFACBF9007F2C30 /* EventsTreeiOSExample */;
 			targetProxy = 92C763D71EFACBF9007F2C30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		92C763C91EFACBF9007F2C30 /* Main.storyboard */ = {
+		9238D87A1F006F1D00D19D0F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				92C763CA1EFACBF9007F2C30 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		92C763CE1EFACBF9007F2C30 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92C763CF1EFACBF9007F2C30 /* Base */,
+				9238D87B1F006F1D00D19D0F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9238D87C1F006F1D00D19D0F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9238D87D1F006F1D00D19D0F /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -561,7 +565,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventNodeExample.app/EventNodeExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventsTreeiOSExample.app/EventsTreeiOSExample";
 			};
 			name = Debug;
 		};
@@ -577,14 +581,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventNodeExample.app/EventNodeExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventsTreeiOSExample.app/EventsTreeiOSExample";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		92C763BD1EFACBF9007F2C30 /* Build configuration list for PBXProject "EventNodeExample" */ = {
+		92C763BD1EFACBF9007F2C30 /* Build configuration list for PBXProject "EventsTreeiOSExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92C763DD1EFACBF9007F2C30 /* Debug */,
@@ -593,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92C763DF1EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventNodeExample" */ = {
+		92C763DF1EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventsTreeiOSExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92C763E01EFACBF9007F2C30 /* Debug */,
@@ -602,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92C763E21EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventNodeExampleTests" */ = {
+		92C763E21EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventsTreeiOSExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92C763E31EFACBF9007F2C30 /* Debug */,
