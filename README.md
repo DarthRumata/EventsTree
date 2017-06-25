@@ -1,3 +1,4 @@
+![pod version](https://img.shields.io/cocoapods/v/EventsTree.svg)    
 __Made in Yalantis__. Inspired by https://github.com/mmrmmlrr/ModelsTreeKit
 
 # Motivation
