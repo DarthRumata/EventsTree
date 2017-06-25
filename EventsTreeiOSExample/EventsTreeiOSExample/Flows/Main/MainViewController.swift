@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import Events
+import EventsTree
 
 extension MainViewController {
 
-  enum Event: Events.Event {
+  enum Event: EventsTree.Event {
     case userSentEvent
     case userAddedHandler(HandlerInfo)
   }

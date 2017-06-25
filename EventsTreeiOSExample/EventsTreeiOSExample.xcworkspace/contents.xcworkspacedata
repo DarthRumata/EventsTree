@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/rumata/Develop/Frameworks/EventNode/EventsTreeiOSExample/EventsTreeiOSExample.xcodeproj">
+      location = "group:EventsTreeiOSExample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

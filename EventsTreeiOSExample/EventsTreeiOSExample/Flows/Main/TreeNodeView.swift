@@ -8,19 +8,19 @@
 
 import Foundation
 import UIKit
-import Events
+import EventsTree
 import AMPopTip
 
 extension TreeNodeView {
 
-  enum Event: Events.Event {
+  enum Event: EventsTree.Event {
     case nodeSelected(TreeNodeView?)
     case bubbleUserEvent(SharedTime)
   }
 
   /// This is hack needed to avoid consuming all events in Event
   /// There is a big lack of current implementation - need to be fixed
-  struct UserGeneratedEvent: Events.Event {}
+  struct UserGeneratedEvent: EventsTree.Event {}
 
   class SharedTime {
     var startTime: DispatchTime = .now()

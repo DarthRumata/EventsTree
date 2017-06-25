@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import Events
+import EventsTree
 
 struct HandlerInfo {
   let tipText: String

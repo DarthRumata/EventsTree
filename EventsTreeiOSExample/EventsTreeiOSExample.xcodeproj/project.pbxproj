@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4920F6E36A56B238DCF2BCCC /* Pods_EventNodeExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153AA5998ED34A084A57751A /* Pods_EventNodeExample.framework */; };
-		9238D8881F006F1D00D19D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8781F006F1D00D19D0F /* AppDelegate.swift */; };
-		9238D8891F006F1D00D19D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9238D8791F006F1D00D19D0F /* Assets.xcassets */; };
-		9238D88A1F006F1D00D19D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238D87A1F006F1D00D19D0F /* LaunchScreen.storyboard */; };
-		9238D88B1F006F1D00D19D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238D87C1F006F1D00D19D0F /* Main.storyboard */; };
-		9238D88C1F006F1D00D19D0F /* MWSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D87F1F006F1D00D19D0F /* MWSegmentedControl.swift */; };
-		9238D88D1F006F1D00D19D0F /* AddHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8821F006F1D00D19D0F /* AddHandlerViewController.swift */; };
-		9238D88E1F006F1D00D19D0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8841F006F1D00D19D0F /* MainViewController.swift */; };
-		9238D88F1F006F1D00D19D0F /* TreeNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8851F006F1D00D19D0F /* TreeNodeView.swift */; };
-		9238D8901F006F1D00D19D0F /* TreeNodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9238D8861F006F1D00D19D0F /* TreeNodeView.xib */; };
-		9238D8911F006F1D00D19D0F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9238D8871F006F1D00D19D0F /* Info.plist */; };
-		9238D8971F006F9B00D19D0F /* EventNodeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8931F006F8D00D19D0F /* EventNodeExampleTests.swift */; };
-		9238D8981F006F9E00D19D0F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9238D8941F006F8D00D19D0F /* Info.plist */; };
-		A263D87DF56A6E0331BAC456 /* Pods_EventNodeExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2B699077A846A869AD681A /* Pods_EventNodeExampleTests.framework */; };
+		4918505B9A1B7178549C17C3 /* Pods_EventsTreeiOSExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2BFF51656F40B6316A038D /* Pods_EventsTreeiOSExampleTests.framework */; };
+		9238D8AA1F00711300D19D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D89A1F00711300D19D0F /* AppDelegate.swift */; };
+		9238D8AB1F00711300D19D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9238D89B1F00711300D19D0F /* Assets.xcassets */; };
+		9238D8AC1F00711300D19D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238D89C1F00711300D19D0F /* LaunchScreen.storyboard */; };
+		9238D8AD1F00711300D19D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238D89E1F00711300D19D0F /* Main.storyboard */; };
+		9238D8AE1F00711300D19D0F /* MWSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8A11F00711300D19D0F /* MWSegmentedControl.swift */; };
+		9238D8AF1F00711300D19D0F /* AddHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8A41F00711300D19D0F /* AddHandlerViewController.swift */; };
+		9238D8B01F00711300D19D0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8A61F00711300D19D0F /* MainViewController.swift */; };
+		9238D8B11F00711300D19D0F /* TreeNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8A71F00711300D19D0F /* TreeNodeView.swift */; };
+		9238D8B21F00711300D19D0F /* TreeNodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9238D8A81F00711300D19D0F /* TreeNodeView.xib */; };
+		9238D8B91F00711D00D19D0F /* EventNodeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8B51F00711A00D19D0F /* EventNodeExampleTests.swift */; };
+		F95A79D73B8455DBE456E2F8 /* Pods_EventsTreeiOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EFC25441ED9DDB8134DD61 /* Pods_EventsTreeiOSExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,25 +33,31 @@
 
 /* Begin PBXFileReference section */
 		153AA5998ED34A084A57751A /* Pods_EventNodeExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventNodeExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1907898DFE1ADB0CC95F3913 /* Pods-EventsTreeiOSExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsTreeiOSExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsTreeiOSExampleTests/Pods-EventsTreeiOSExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		38EFC25441ED9DDB8134DD61 /* Pods_EventsTreeiOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsTreeiOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2B8DAAA45663AD69C5F782 /* Pods-EventNodeExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExample/Pods-EventNodeExample.release.xcconfig"; sourceTree = "<group>"; };
 		750CCC70BB759AF9A202C469 /* Pods-EventNodeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExample/Pods-EventNodeExample.debug.xcconfig"; sourceTree = "<group>"; };
-		9238D8781F006F1D00D19D0F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9238D8791F006F1D00D19D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9238D87B1F006F1D00D19D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9238D87D1F006F1D00D19D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9238D87F1F006F1D00D19D0F /* MWSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWSegmentedControl.swift; sourceTree = "<group>"; };
-		9238D8821F006F1D00D19D0F /* AddHandlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHandlerViewController.swift; sourceTree = "<group>"; };
-		9238D8841F006F1D00D19D0F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		9238D8851F006F1D00D19D0F /* TreeNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeView.swift; sourceTree = "<group>"; };
-		9238D8861F006F1D00D19D0F /* TreeNodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeNodeView.xib; sourceTree = "<group>"; };
-		9238D8871F006F1D00D19D0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9238D8931F006F8D00D19D0F /* EventNodeExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventNodeExampleTests.swift; sourceTree = "<group>"; };
-		9238D8941F006F8D00D19D0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4EE5648053AE9704993210 /* Pods-EventsTreeiOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsTreeiOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample.release.xcconfig"; sourceTree = "<group>"; };
+		9238D89A1F00711300D19D0F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9238D89B1F00711300D19D0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9238D89D1F00711300D19D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9238D89F1F00711300D19D0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9238D8A11F00711300D19D0F /* MWSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWSegmentedControl.swift; sourceTree = "<group>"; };
+		9238D8A41F00711300D19D0F /* AddHandlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHandlerViewController.swift; sourceTree = "<group>"; };
+		9238D8A61F00711300D19D0F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9238D8A71F00711300D19D0F /* TreeNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeView.swift; sourceTree = "<group>"; };
+		9238D8A81F00711300D19D0F /* TreeNodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeNodeView.xib; sourceTree = "<group>"; };
+		9238D8A91F00711300D19D0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9238D8B51F00711A00D19D0F /* EventNodeExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventNodeExampleTests.swift; sourceTree = "<group>"; };
+		9238D8B61F00711A00D19D0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C763C21EFACBF9007F2C30 /* EventsTreeiOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsTreeiOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C763D61EFACBF9007F2C30 /* EventsTreeiOSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTreeiOSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		984B62A462ABDDE309FFA395 /* Pods-EventsTreeiOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsTreeiOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A048893C41867DEFDABF3E13 /* Pods-EventNodeExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADD2FCFE8264F8EDD8BD0B8D /* Pods-EventNodeExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2B699077A846A869AD681A /* Pods_EventNodeExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventNodeExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2BFF51656F40B6316A038D /* Pods_EventsTreeiOSExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsTreeiOSExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75DBA99894B76D0EE6BD080 /* Pods-EventsTreeiOSExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsTreeiOSExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsTreeiOSExampleTests/Pods-EventsTreeiOSExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4920F6E36A56B238DCF2BCCC /* Pods_EventNodeExample.framework in Frameworks */,
+				F95A79D73B8455DBE456E2F8 /* Pods_EventsTreeiOSExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A263D87DF56A6E0331BAC456 /* Pods_EventNodeExampleTests.framework in Frameworks */,
+				4918505B9A1B7178549C17C3 /* Pods_EventsTreeiOSExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +85,8 @@
 			children = (
 				153AA5998ED34A084A57751A /* Pods_EventNodeExample.framework */,
 				BB2B699077A846A869AD681A /* Pods_EventNodeExampleTests.framework */,
+				38EFC25441ED9DDB8134DD61 /* Pods_EventsTreeiOSExample.framework */,
+				ED2BFF51656F40B6316A038D /* Pods_EventsTreeiOSExampleTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -92,73 +98,77 @@
 				3A2B8DAAA45663AD69C5F782 /* Pods-EventNodeExample.release.xcconfig */,
 				ADD2FCFE8264F8EDD8BD0B8D /* Pods-EventNodeExampleTests.debug.xcconfig */,
 				A048893C41867DEFDABF3E13 /* Pods-EventNodeExampleTests.release.xcconfig */,
+				984B62A462ABDDE309FFA395 /* Pods-EventsTreeiOSExample.debug.xcconfig */,
+				8E4EE5648053AE9704993210 /* Pods-EventsTreeiOSExample.release.xcconfig */,
+				F75DBA99894B76D0EE6BD080 /* Pods-EventsTreeiOSExampleTests.debug.xcconfig */,
+				1907898DFE1ADB0CC95F3913 /* Pods-EventsTreeiOSExampleTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9238D8771F006F1D00D19D0F /* EventTreeiOSExample */ = {
+		9238D8991F00711300D19D0F /* EventsTreeiOSExample */ = {
 			isa = PBXGroup;
 			children = (
-				9238D8781F006F1D00D19D0F /* AppDelegate.swift */,
-				9238D8791F006F1D00D19D0F /* Assets.xcassets */,
-				9238D87A1F006F1D00D19D0F /* LaunchScreen.storyboard */,
-				9238D87C1F006F1D00D19D0F /* Main.storyboard */,
-				9238D87E1F006F1D00D19D0F /* External */,
-				9238D8801F006F1D00D19D0F /* Flows */,
-				9238D8871F006F1D00D19D0F /* Info.plist */,
+				9238D89A1F00711300D19D0F /* AppDelegate.swift */,
+				9238D89B1F00711300D19D0F /* Assets.xcassets */,
+				9238D89C1F00711300D19D0F /* LaunchScreen.storyboard */,
+				9238D89E1F00711300D19D0F /* Main.storyboard */,
+				9238D8A01F00711300D19D0F /* External */,
+				9238D8A21F00711300D19D0F /* Flows */,
+				9238D8A91F00711300D19D0F /* Info.plist */,
 			);
-			path = EventTreeiOSExample;
+			path = EventsTreeiOSExample;
 			sourceTree = "<group>";
 		};
-		9238D87E1F006F1D00D19D0F /* External */ = {
+		9238D8A01F00711300D19D0F /* External */ = {
 			isa = PBXGroup;
 			children = (
-				9238D87F1F006F1D00D19D0F /* MWSegmentedControl.swift */,
+				9238D8A11F00711300D19D0F /* MWSegmentedControl.swift */,
 			);
 			path = External;
 			sourceTree = "<group>";
 		};
-		9238D8801F006F1D00D19D0F /* Flows */ = {
+		9238D8A21F00711300D19D0F /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				9238D8811F006F1D00D19D0F /* AddHandler */,
-				9238D8831F006F1D00D19D0F /* Main */,
+				9238D8A31F00711300D19D0F /* AddHandler */,
+				9238D8A51F00711300D19D0F /* Main */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
 		};
-		9238D8811F006F1D00D19D0F /* AddHandler */ = {
+		9238D8A31F00711300D19D0F /* AddHandler */ = {
 			isa = PBXGroup;
 			children = (
-				9238D8821F006F1D00D19D0F /* AddHandlerViewController.swift */,
+				9238D8A41F00711300D19D0F /* AddHandlerViewController.swift */,
 			);
 			path = AddHandler;
 			sourceTree = "<group>";
 		};
-		9238D8831F006F1D00D19D0F /* Main */ = {
+		9238D8A51F00711300D19D0F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				9238D8841F006F1D00D19D0F /* MainViewController.swift */,
-				9238D8851F006F1D00D19D0F /* TreeNodeView.swift */,
-				9238D8861F006F1D00D19D0F /* TreeNodeView.xib */,
+				9238D8A61F00711300D19D0F /* MainViewController.swift */,
+				9238D8A71F00711300D19D0F /* TreeNodeView.swift */,
+				9238D8A81F00711300D19D0F /* TreeNodeView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		9238D8921F006F8D00D19D0F /* EventTreeiOSExampleTests */ = {
+		9238D8B41F00711A00D19D0F /* EventsTreeiOSExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				9238D8931F006F8D00D19D0F /* EventNodeExampleTests.swift */,
-				9238D8941F006F8D00D19D0F /* Info.plist */,
+				9238D8B51F00711A00D19D0F /* EventNodeExampleTests.swift */,
+				9238D8B61F00711A00D19D0F /* Info.plist */,
 			);
-			path = EventTreeiOSExampleTests;
+			path = EventsTreeiOSExampleTests;
 			sourceTree = "<group>";
 		};
 		92C763B91EFACBF9007F2C30 = {
 			isa = PBXGroup;
 			children = (
-				9238D8921F006F8D00D19D0F /* EventTreeiOSExampleTests */,
-				9238D8771F006F1D00D19D0F /* EventTreeiOSExample */,
+				9238D8B41F00711A00D19D0F /* EventsTreeiOSExampleTests */,
+				9238D8991F00711300D19D0F /* EventsTreeiOSExample */,
 				92C763C31EFACBF9007F2C30 /* Products */,
 				54F3C7DBF6F2E08FFE07BFBE /* Pods */,
 				3B52415A56CD7109D2639450 /* Frameworks */,
@@ -266,11 +276,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9238D88B1F006F1D00D19D0F /* Main.storyboard in Resources */,
-				9238D8891F006F1D00D19D0F /* Assets.xcassets in Resources */,
-				9238D8901F006F1D00D19D0F /* TreeNodeView.xib in Resources */,
-				9238D8911F006F1D00D19D0F /* Info.plist in Resources */,
-				9238D88A1F006F1D00D19D0F /* LaunchScreen.storyboard in Resources */,
+				9238D8AD1F00711300D19D0F /* Main.storyboard in Resources */,
+				9238D8AB1F00711300D19D0F /* Assets.xcassets in Resources */,
+				9238D8B21F00711300D19D0F /* TreeNodeView.xib in Resources */,
+				9238D8AC1F00711300D19D0F /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9238D8981F006F9E00D19D0F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +305,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventNodeExample/Pods-EventNodeExample-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		59B4BC437E80EFD3C715F29C /* [CP] Embed Pods Frameworks */ = {
@@ -312,7 +320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventNodeExample/Pods-EventNodeExample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		858DC7A98E7CFA5E2E5525F9 /* [CP] Embed Pods Frameworks */ = {
@@ -327,7 +335,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsTreeiOSExampleTests/Pods-EventsTreeiOSExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB2F53DB7EC8065FC2EBC036 /* [CP] Copy Pods Resources */ = {
@@ -342,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsTreeiOSExampleTests/Pods-EventsTreeiOSExampleTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE7B219573F162C3C85B06DA /* [CP] Check Pods Manifest.lock */ = {
@@ -382,11 +390,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9238D88D1F006F1D00D19D0F /* AddHandlerViewController.swift in Sources */,
-				9238D88C1F006F1D00D19D0F /* MWSegmentedControl.swift in Sources */,
-				9238D8881F006F1D00D19D0F /* AppDelegate.swift in Sources */,
-				9238D88E1F006F1D00D19D0F /* MainViewController.swift in Sources */,
-				9238D88F1F006F1D00D19D0F /* TreeNodeView.swift in Sources */,
+				9238D8AF1F00711300D19D0F /* AddHandlerViewController.swift in Sources */,
+				9238D8AE1F00711300D19D0F /* MWSegmentedControl.swift in Sources */,
+				9238D8AA1F00711300D19D0F /* AppDelegate.swift in Sources */,
+				9238D8B01F00711300D19D0F /* MainViewController.swift in Sources */,
+				9238D8B11F00711300D19D0F /* TreeNodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9238D8971F006F9B00D19D0F /* EventNodeExampleTests.swift in Sources */,
+				9238D8B91F00711D00D19D0F /* EventNodeExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,18 +417,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9238D87A1F006F1D00D19D0F /* LaunchScreen.storyboard */ = {
+		9238D89C1F00711300D19D0F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9238D87B1F006F1D00D19D0F /* Base */,
+				9238D89D1F00711300D19D0F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		9238D87C1F006F1D00D19D0F /* Main.storyboard */ = {
+		9238D89E1F00711300D19D0F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9238D87D1F006F1D00D19D0F /* Base */,
+				9238D89F1F00711300D19D0F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -525,11 +533,11 @@
 		};
 		92C763E01EFACBF9007F2C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 750CCC70BB759AF9A202C469 /* Pods-EventNodeExample.debug.xcconfig */;
+			baseConfigurationReference = 984B62A462ABDDE309FFA395 /* Pods-EventsTreeiOSExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4GS5NBU7N5;
-				INFOPLIST_FILE = EventNodeExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EventsTreeiOSExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExample;
@@ -540,11 +548,11 @@
 		};
 		92C763E11EFACBF9007F2C30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A2B8DAAA45663AD69C5F782 /* Pods-EventNodeExample.release.xcconfig */;
+			baseConfigurationReference = 8E4EE5648053AE9704993210 /* Pods-EventsTreeiOSExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4GS5NBU7N5;
-				INFOPLIST_FILE = EventNodeExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EventsTreeiOSExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExample;
@@ -555,12 +563,12 @@
 		};
 		92C763E31EFACBF9007F2C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADD2FCFE8264F8EDD8BD0B8D /* Pods-EventNodeExampleTests.debug.xcconfig */;
+			baseConfigurationReference = F75DBA99894B76D0EE6BD080 /* Pods-EventsTreeiOSExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4GS5NBU7N5;
-				INFOPLIST_FILE = EventNodeExampleTests/Info.plist;
+				INFOPLIST_FILE = EventsTreeiOSExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -571,12 +579,12 @@
 		};
 		92C763E41EFACBF9007F2C30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A048893C41867DEFDABF3E13 /* Pods-EventNodeExampleTests.release.xcconfig */;
+			baseConfigurationReference = 1907898DFE1ADB0CC95F3913 /* Pods-EventsTreeiOSExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4GS5NBU7N5;
-				INFOPLIST_FILE = EventNodeExampleTests/Info.plist;
+				INFOPLIST_FILE = EventsTreeiOSExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

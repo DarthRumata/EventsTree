@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import EventNodeExample
+@testable import EventsTreeiOSExample
 
 class EventNodeExampleTests: XCTestCase {
     

@@ -1,11 +1,11 @@
-target 'EventNodeExample' do
+target 'EventsTreeiOSExample' do
   use_frameworks!
   platform :ios, '9.0'
 
-  pod 'Events', :git => 'https://github.com/DarthRumata/EventNode.git'
+  pod 'EventsTree', '~> 0.1'
   pod 'AMPopTip', '2.1.6'
 
-  target 'EventNodeExampleTests' do
+  target 'EventsTreeiOSExampleTests' do
     inherit! :search_paths
     # Pods for testing
   end
