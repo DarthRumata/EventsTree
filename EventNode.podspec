@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "Events"
   s.module_name  = "Events"
-  s.version      = "0.1.0"
+  s.version      = "0.1.3"
   s.summary      = "iOS library for sending and handling events"
   s.description  = <<-DESC
     This library is inteded to get rid of spagetti code which comes
