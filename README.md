@@ -1,4 +1,5 @@
-![pod version](https://img.shields.io/cocoapods/v/EventsTree.svg)  
+![pod version](https://img.shields.io/cocoapods/v/EventsTree.svg) 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/DarthRumata/EventsTree)  
   
 __Made in Yalantis__. Inspired by https://github.com/mmrmmlrr/ModelsTreeKit
 
