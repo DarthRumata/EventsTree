@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4918505B9A1B7178549C17C3 /* Pods_EventsTreeiOSExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2BFF51656F40B6316A038D /* Pods_EventsTreeiOSExampleTests.framework */; };
 		9238D8AA1F00711300D19D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D89A1F00711300D19D0F /* AppDelegate.swift */; };
 		9238D8AB1F00711300D19D0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9238D89B1F00711300D19D0F /* Assets.xcassets */; };
 		9238D8AC1F00711300D19D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9238D89C1F00711300D19D0F /* LaunchScreen.storyboard */; };
@@ -17,19 +16,8 @@
 		9238D8B01F00711300D19D0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8A61F00711300D19D0F /* MainViewController.swift */; };
 		9238D8B11F00711300D19D0F /* TreeNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8A71F00711300D19D0F /* TreeNodeView.swift */; };
 		9238D8B21F00711300D19D0F /* TreeNodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9238D8A81F00711300D19D0F /* TreeNodeView.xib */; };
-		9238D8B91F00711D00D19D0F /* EventNodeExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8B51F00711A00D19D0F /* EventNodeExampleTests.swift */; };
 		F95A79D73B8455DBE456E2F8 /* Pods_EventsTreeiOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EFC25441ED9DDB8134DD61 /* Pods_EventsTreeiOSExample.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		92C763D71EFACBF9007F2C30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 92C763BA1EFACBF9007F2C30 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92C763C11EFACBF9007F2C30;
-			remoteInfo = EventNodeExample;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		153AA5998ED34A084A57751A /* Pods_EventNodeExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventNodeExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,10 +36,7 @@
 		9238D8A71F00711300D19D0F /* TreeNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeView.swift; sourceTree = "<group>"; };
 		9238D8A81F00711300D19D0F /* TreeNodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeNodeView.xib; sourceTree = "<group>"; };
 		9238D8A91F00711300D19D0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9238D8B51F00711A00D19D0F /* EventNodeExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventNodeExampleTests.swift; sourceTree = "<group>"; };
-		9238D8B61F00711A00D19D0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C763C21EFACBF9007F2C30 /* EventsTreeiOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsTreeiOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		92C763D61EFACBF9007F2C30 /* EventsTreeiOSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTreeiOSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		984B62A462ABDDE309FFA395 /* Pods-EventsTreeiOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsTreeiOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A048893C41867DEFDABF3E13 /* Pods-EventNodeExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADD2FCFE8264F8EDD8BD0B8D /* Pods-EventNodeExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,14 +51,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F95A79D73B8455DBE456E2F8 /* Pods_EventsTreeiOSExample.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92C763D31EFACBF9007F2C30 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4918505B9A1B7178549C17C3 /* Pods_EventsTreeiOSExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,19 +132,9 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		9238D8B41F00711A00D19D0F /* EventsTreeiOSExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				9238D8B51F00711A00D19D0F /* EventNodeExampleTests.swift */,
-				9238D8B61F00711A00D19D0F /* Info.plist */,
-			);
-			path = EventsTreeiOSExampleTests;
-			sourceTree = "<group>";
-		};
 		92C763B91EFACBF9007F2C30 = {
 			isa = PBXGroup;
 			children = (
-				9238D8B41F00711A00D19D0F /* EventsTreeiOSExampleTests */,
 				9238D8991F00711300D19D0F /* EventsTreeiOSExample */,
 				92C763C31EFACBF9007F2C30 /* Products */,
 				54F3C7DBF6F2E08FFE07BFBE /* Pods */,
@@ -179,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				92C763C21EFACBF9007F2C30 /* EventsTreeiOSExample.app */,
-				92C763D61EFACBF9007F2C30 /* EventsTreeiOSExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,27 +173,6 @@
 			productReference = 92C763C21EFACBF9007F2C30 /* EventsTreeiOSExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		92C763D51EFACBF9007F2C30 /* EventsTreeiOSExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 92C763E21EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventsTreeiOSExampleTests" */;
-			buildPhases = (
-				F3EED00BDC90BF6457051CD2 /* [CP] Check Pods Manifest.lock */,
-				92C763D21EFACBF9007F2C30 /* Sources */,
-				92C763D31EFACBF9007F2C30 /* Frameworks */,
-				92C763D41EFACBF9007F2C30 /* Resources */,
-				858DC7A98E7CFA5E2E5525F9 /* [CP] Embed Pods Frameworks */,
-				DB2F53DB7EC8065FC2EBC036 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				92C763D81EFACBF9007F2C30 /* PBXTargetDependency */,
-			);
-			name = EventsTreeiOSExampleTests;
-			productName = EventNodeExampleTests;
-			productReference = 92C763D61EFACBF9007F2C30 /* EventsTreeiOSExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -243,12 +188,6 @@
 						DevelopmentTeam = 4GS5NBU7N5;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
-					};
-					92C763D51EFACBF9007F2C30 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 4GS5NBU7N5;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 92C763C11EFACBF9007F2C30;
 					};
 				};
 			};
@@ -266,7 +205,6 @@
 			projectRoot = "";
 			targets = (
 				92C763C11EFACBF9007F2C30 /* EventsTreeiOSExample */,
-				92C763D51EFACBF9007F2C30 /* EventsTreeiOSExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,13 +218,6 @@
 				9238D8AB1F00711300D19D0F /* Assets.xcassets in Resources */,
 				9238D8B21F00711300D19D0F /* TreeNodeView.xib in Resources */,
 				9238D8AC1F00711300D19D0F /* LaunchScreen.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92C763D41EFACBF9007F2C30 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,52 +254,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		858DC7A98E7CFA5E2E5525F9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsTreeiOSExampleTests/Pods-EventsTreeiOSExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB2F53DB7EC8065FC2EBC036 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsTreeiOSExampleTests/Pods-EventsTreeiOSExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		EE7B219573F162C3C85B06DA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F3EED00BDC90BF6457051CD2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,23 +284,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92C763D21EFACBF9007F2C30 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9238D8B91F00711D00D19D0F /* EventNodeExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		92C763D81EFACBF9007F2C30 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 92C763C11EFACBF9007F2C30 /* EventsTreeiOSExample */;
-			targetProxy = 92C763D71EFACBF9007F2C30 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9238D89C1F00711300D19D0F /* LaunchScreen.storyboard */ = {
@@ -561,38 +431,6 @@
 			};
 			name = Release;
 		};
-		92C763E31EFACBF9007F2C30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F75DBA99894B76D0EE6BD080 /* Pods-EventsTreeiOSExampleTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4GS5NBU7N5;
-				INFOPLIST_FILE = EventsTreeiOSExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventsTreeiOSExample.app/EventsTreeiOSExample";
-			};
-			name = Debug;
-		};
-		92C763E41EFACBF9007F2C30 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1907898DFE1ADB0CC95F3913 /* Pods-EventsTreeiOSExampleTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 4GS5NBU7N5;
-				INFOPLIST_FILE = EventsTreeiOSExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EventsTreeiOSExample.app/EventsTreeiOSExample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -610,15 +448,6 @@
 			buildConfigurations = (
 				92C763E01EFACBF9007F2C30 /* Debug */,
 				92C763E11EFACBF9007F2C30 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		92C763E21EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventsTreeiOSExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92C763E31EFACBF9007F2C30 /* Debug */,
-				92C763E41EFACBF9007F2C30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
