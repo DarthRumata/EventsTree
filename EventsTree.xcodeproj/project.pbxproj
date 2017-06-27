@@ -10,8 +10,8 @@
 		9228A71E1F0303C000985134 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A71B1F0303C000985134 /* Event.swift */; };
 		9228A71F1F0303C000985134 /* EventMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A71C1F0303C000985134 /* EventMetadata.swift */; };
 		9228A7201F0303C000985134 /* EventNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A71D1F0303C000985134 /* EventNode.swift */; };
+		9228A7261F0305FE00985134 /* EventsTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7221F0305F600985134 /* EventsTreeTests.swift */; };
 		9238D8D51F0107AC00D19D0F /* EventsTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9238D8CB1F0107AC00D19D0F /* EventsTree.framework */; };
-		9238D8DA1F0107AC00D19D0F /* EventsTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9238D8D91F0107AC00D19D0F /* EventsTreeTests.swift */; };
 		9238D8DC1F0107AC00D19D0F /* EventsTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 9238D8CE1F0107AC00D19D0F /* EventsTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -29,12 +29,12 @@
 		9228A71B1F0303C000985134 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9228A71C1F0303C000985134 /* EventMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMetadata.swift; sourceTree = "<group>"; };
 		9228A71D1F0303C000985134 /* EventNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventNode.swift; sourceTree = "<group>"; };
+		9228A7221F0305F600985134 /* EventsTreeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTreeTests.swift; sourceTree = "<group>"; };
+		9228A7231F0305F600985134 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9238D8CB1F0107AC00D19D0F /* EventsTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EventsTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9238D8CE1F0107AC00D19D0F /* EventsTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsTree.h; sourceTree = "<group>"; };
 		9238D8CF1F0107AC00D19D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9238D8D41F0107AC00D19D0F /* EventsTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9238D8D91F0107AC00D19D0F /* EventsTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTreeTests.swift; sourceTree = "<group>"; };
-		9238D8DB1F0107AC00D19D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +66,22 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		9228A7211F0305F600985134 /* EventsTreeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9228A7221F0305F600985134 /* EventsTreeTests.swift */,
+				9228A7231F0305F600985134 /* Info.plist */,
+			);
+			name = EventsTreeTests;
+			path = Tests/EventsTreeTests;
+			sourceTree = "<group>";
+		};
 		9238D8BB1F0105EF00D19D0F = {
 			isa = PBXGroup;
 			children = (
 				9228A71A1F0303C000985134 /* Sources */,
 				9238D8CD1F0107AC00D19D0F /* EventsTree */,
-				9238D8D81F0107AC00D19D0F /* EventsTreeTests */,
+				9228A7211F0305F600985134 /* EventsTreeTests */,
 				9238D8CC1F0107AC00D19D0F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,15 +102,6 @@
 				9238D8CF1F0107AC00D19D0F /* Info.plist */,
 			);
 			path = EventsTree;
-			sourceTree = "<group>";
-		};
-		9238D8D81F0107AC00D19D0F /* EventsTreeTests */ = {
-			isa = PBXGroup;
-			children = (
-				9238D8D91F0107AC00D19D0F /* EventsTreeTests.swift */,
-				9238D8DB1F0107AC00D19D0F /* Info.plist */,
-			);
-			path = EventsTreeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9238D8DA1F0107AC00D19D0F /* EventsTreeTests.swift in Sources */,
+				9228A7261F0305FE00985134 /* EventsTreeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = EventsTreeTests/Info.plist;
+				INFOPLIST_FILE = Tests/EventsTreeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -474,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = EventsTreeTests/Info.plist;
+				INFOPLIST_FILE = Tests/EventsTreeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
