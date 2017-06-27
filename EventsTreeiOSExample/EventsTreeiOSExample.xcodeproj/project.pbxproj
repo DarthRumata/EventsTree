@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9228A7661F03110500985134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7561F03110500985134 /* AppDelegate.swift */; };
-		9228A7671F03110500985134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7571F03110500985134 /* Assets.xcassets */; };
-		9228A7681F03110500985134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7581F03110500985134 /* LaunchScreen.storyboard */; };
-		9228A7691F03110500985134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9228A75A1F03110500985134 /* Main.storyboard */; };
-		9228A76A1F03110500985134 /* MWSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A75D1F03110500985134 /* MWSegmentedControl.swift */; };
-		9228A76B1F03110500985134 /* AddHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7601F03110500985134 /* AddHandlerViewController.swift */; };
-		9228A76C1F03110500985134 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7621F03110500985134 /* MainViewController.swift */; };
-		9228A76D1F03110500985134 /* TreeNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7631F03110500985134 /* TreeNodeView.swift */; };
-		9228A76E1F03110500985134 /* TreeNodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7641F03110500985134 /* TreeNodeView.xib */; };
-		9228A76F1F03110500985134 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7651F03110500985134 /* Info.plist */; };
+		9228A7841F03143000985134 /* AddHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7751F03143000985134 /* AddHandlerViewController.swift */; };
+		9228A7851F03143000985134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7761F03143000985134 /* AppDelegate.swift */; };
+		9228A7861F03143000985134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7771F03143000985134 /* Assets.xcassets */; };
+		9228A7871F03143000985134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7781F03143000985134 /* LaunchScreen.storyboard */; };
+		9228A7881F03143000985134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9228A77A1F03143000985134 /* Main.storyboard */; };
+		9228A7891F03143000985134 /* MWSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A77D1F03143000985134 /* MWSegmentedControl.swift */; };
+		9228A78A1F03143000985134 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9228A77F1F03143000985134 /* Info.plist */; };
+		9228A78B1F03143000985134 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7811F03143000985134 /* MainViewController.swift */; };
+		9228A78C1F03143000985134 /* TreeNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7821F03143000985134 /* TreeNodeView.swift */; };
+		9228A78D1F03143000985134 /* TreeNodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7831F03143000985134 /* TreeNodeView.xib */; };
 		F95A79D73B8455DBE456E2F8 /* Pods_EventsTreeiOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EFC25441ED9DDB8134DD61 /* Pods_EventsTreeiOSExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,18 +27,18 @@
 		3A2B8DAAA45663AD69C5F782 /* Pods-EventNodeExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExample/Pods-EventNodeExample.release.xcconfig"; sourceTree = "<group>"; };
 		750CCC70BB759AF9A202C469 /* Pods-EventNodeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExample/Pods-EventNodeExample.debug.xcconfig"; sourceTree = "<group>"; };
 		8E4EE5648053AE9704993210 /* Pods-EventsTreeiOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsTreeiOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample.release.xcconfig"; sourceTree = "<group>"; };
-		9228A7561F03110500985134 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9228A7571F03110500985134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9228A7591F03110500985134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9228A75B1F03110500985134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9228A75D1F03110500985134 /* MWSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWSegmentedControl.swift; sourceTree = "<group>"; };
-		9228A7601F03110500985134 /* AddHandlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHandlerViewController.swift; sourceTree = "<group>"; };
-		9228A7621F03110500985134 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		9228A7631F03110500985134 /* TreeNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeView.swift; sourceTree = "<group>"; };
-		9228A7641F03110500985134 /* TreeNodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeNodeView.xib; sourceTree = "<group>"; };
-		9228A7651F03110500985134 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9228A7701F03114100985134 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		92C763C21EFACBF9007F2C30 /* EventsTreeiOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsTreeiOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9228A7751F03143000985134 /* AddHandlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHandlerViewController.swift; sourceTree = "<group>"; };
+		9228A7761F03143000985134 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9228A7771F03143000985134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9228A7791F03143000985134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9228A77B1F03143000985134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9228A77D1F03143000985134 /* MWSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWSegmentedControl.swift; sourceTree = "<group>"; };
+		9228A77F1F03143000985134 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9228A7811F03143000985134 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9228A7821F03143000985134 /* TreeNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeView.swift; sourceTree = "<group>"; };
+		9228A7831F03143000985134 /* TreeNodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeNodeView.xib; sourceTree = "<group>"; };
+		92C763C21EFACBF9007F2C30 /* IOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		984B62A462ABDDE309FFA395 /* Pods-EventsTreeiOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsTreeiOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A048893C41867DEFDABF3E13 /* Pods-EventNodeExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADD2FCFE8264F8EDD8BD0B8D /* Pods-EventNodeExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,51 +85,59 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9228A7551F03110500985134 /* Sources */ = {
+		9228A7721F03143000985134 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9228A7561F03110500985134 /* AppDelegate.swift */,
-				9228A7571F03110500985134 /* Assets.xcassets */,
-				9228A7581F03110500985134 /* LaunchScreen.storyboard */,
-				9228A75A1F03110500985134 /* Main.storyboard */,
-				9228A75C1F03110500985134 /* External */,
-				9228A75E1F03110500985134 /* Flows */,
-				9228A7651F03110500985134 /* Info.plist */,
+				9228A7731F03143000985134 /* IOSExample */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		9228A75C1F03110500985134 /* External */ = {
+		9228A7731F03143000985134 /* IOSExample */ = {
 			isa = PBXGroup;
 			children = (
-				9228A75D1F03110500985134 /* MWSegmentedControl.swift */,
+				9228A7741F03143000985134 /* AddHandler */,
+				9228A7761F03143000985134 /* AppDelegate.swift */,
+				9228A7771F03143000985134 /* Assets.xcassets */,
+				9228A7781F03143000985134 /* LaunchScreen.storyboard */,
+				9228A77A1F03143000985134 /* Main.storyboard */,
+				9228A77C1F03143000985134 /* External */,
+				9228A77E1F03143000985134 /* Flows */,
+				9228A77F1F03143000985134 /* Info.plist */,
+				9228A7801F03143000985134 /* Main */,
 			);
-			path = External;
+			path = IOSExample;
 			sourceTree = "<group>";
 		};
-		9228A75E1F03110500985134 /* Flows */ = {
+		9228A7741F03143000985134 /* AddHandler */ = {
 			isa = PBXGroup;
 			children = (
-				9228A75F1F03110500985134 /* AddHandler */,
-				9228A7611F03110500985134 /* Main */,
-			);
-			path = Flows;
-			sourceTree = "<group>";
-		};
-		9228A75F1F03110500985134 /* AddHandler */ = {
-			isa = PBXGroup;
-			children = (
-				9228A7601F03110500985134 /* AddHandlerViewController.swift */,
+				9228A7751F03143000985134 /* AddHandlerViewController.swift */,
 			);
 			path = AddHandler;
 			sourceTree = "<group>";
 		};
-		9228A7611F03110500985134 /* Main */ = {
+		9228A77C1F03143000985134 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				9228A7621F03110500985134 /* MainViewController.swift */,
-				9228A7631F03110500985134 /* TreeNodeView.swift */,
-				9228A7641F03110500985134 /* TreeNodeView.xib */,
+				9228A77D1F03143000985134 /* MWSegmentedControl.swift */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		9228A77E1F03143000985134 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		9228A7801F03143000985134 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9228A7811F03143000985134 /* MainViewController.swift */,
+				9228A7821F03143000985134 /* TreeNodeView.swift */,
+				9228A7831F03143000985134 /* TreeNodeView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -137,8 +145,8 @@
 		92C763B91EFACBF9007F2C30 = {
 			isa = PBXGroup;
 			children = (
+				9228A7721F03143000985134 /* Sources */,
 				9228A7701F03114100985134 /* Package.swift */,
-				9228A7551F03110500985134 /* Sources */,
 				92C763C31EFACBF9007F2C30 /* Products */,
 				54F3C7DBF6F2E08FFE07BFBE /* Pods */,
 				3B52415A56CD7109D2639450 /* Frameworks */,
@@ -148,7 +156,7 @@
 		92C763C31EFACBF9007F2C30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				92C763C21EFACBF9007F2C30 /* EventsTreeiOSExample.app */,
+				92C763C21EFACBF9007F2C30 /* IOSExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		92C763C11EFACBF9007F2C30 /* EventsTreeiOSExample */ = {
+		92C763C11EFACBF9007F2C30 /* IOSExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 92C763DF1EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventsTreeiOSExample" */;
+			buildConfigurationList = 92C763DF1EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "IOSExample" */;
 			buildPhases = (
 				EE7B219573F162C3C85B06DA /* [CP] Check Pods Manifest.lock */,
 				92C763BE1EFACBF9007F2C30 /* Sources */,
@@ -171,9 +179,9 @@
 			);
 			dependencies = (
 			);
-			name = EventsTreeiOSExample;
+			name = IOSExample;
 			productName = EventNodeExample;
-			productReference = 92C763C21EFACBF9007F2C30 /* EventsTreeiOSExample.app */;
+			productReference = 92C763C21EFACBF9007F2C30 /* IOSExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +215,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92C763C11EFACBF9007F2C30 /* EventsTreeiOSExample */,
+				92C763C11EFACBF9007F2C30 /* IOSExample */,
 			);
 		};
 /* End PBXProject section */
@@ -217,11 +225,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9228A7691F03110500985134 /* Main.storyboard in Resources */,
-				9228A7671F03110500985134 /* Assets.xcassets in Resources */,
-				9228A76E1F03110500985134 /* TreeNodeView.xib in Resources */,
-				9228A76F1F03110500985134 /* Info.plist in Resources */,
-				9228A7681F03110500985134 /* LaunchScreen.storyboard in Resources */,
+				9228A78D1F03143000985134 /* TreeNodeView.xib in Resources */,
+				9228A78A1F03143000985134 /* Info.plist in Resources */,
+				9228A7881F03143000985134 /* Main.storyboard in Resources */,
+				9228A7861F03143000985134 /* Assets.xcassets in Resources */,
+				9228A7871F03143000985134 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,29 +288,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9228A76B1F03110500985134 /* AddHandlerViewController.swift in Sources */,
-				9228A76A1F03110500985134 /* MWSegmentedControl.swift in Sources */,
-				9228A7661F03110500985134 /* AppDelegate.swift in Sources */,
-				9228A76C1F03110500985134 /* MainViewController.swift in Sources */,
-				9228A76D1F03110500985134 /* TreeNodeView.swift in Sources */,
+				9228A7851F03143000985134 /* AppDelegate.swift in Sources */,
+				9228A7841F03143000985134 /* AddHandlerViewController.swift in Sources */,
+				9228A7891F03143000985134 /* MWSegmentedControl.swift in Sources */,
+				9228A78B1F03143000985134 /* MainViewController.swift in Sources */,
+				9228A78C1F03143000985134 /* TreeNodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9228A7581F03110500985134 /* LaunchScreen.storyboard */ = {
+		9228A7781F03143000985134 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9228A7591F03110500985134 /* Base */,
+				9228A7791F03143000985134 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		9228A75A1F03110500985134 /* Main.storyboard */ = {
+		9228A77A1F03143000985134 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9228A75B1F03110500985134 /* Base */,
+				9228A77B1F03143000985134 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -411,7 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4GS5NBU7N5;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/IOSExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExample;
@@ -426,7 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4GS5NBU7N5;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/IOSExample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExample;
@@ -447,7 +455,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		92C763DF1EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "EventsTreeiOSExample" */ = {
+		92C763DF1EFACBF9007F2C30 /* Build configuration list for PBXNativeTarget "IOSExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				92C763E01EFACBF9007F2C30 /* Debug */,
