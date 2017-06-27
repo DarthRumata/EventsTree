@@ -1,15 +1,15 @@
 //
-//  EventNodeExampleTests.swift
-//  EventNodeExampleTests
+//  EventsTreeTests.swift
+//  EventsTreeTests
 //
-//  Created by Rumata on 6/21/17.
-//  Copyright © 2017 DarthRumata. All rights reserved.
+//  Created by Rumata on 6/26/17.
+//
 //
 
 import XCTest
-@testable import EventNodeExample
+@testable import EventsTree
 
-class EventNodeExampleTests: XCTestCase {
+class EventsTreeTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
