@@ -47,13 +47,15 @@ Then execute command in console:
 ### Swift Package Manager(can build only for macOS!)
 
 Create Package.swift file(project folders layout should match requirements):  
-`import PackageDescription  
+```
+import PackageDescription  
 let package = Package(  
   name: “Greeter”,  
   dependencies: [    
     .Package(url: “https://github.com/DarthRumata/EventsTree.git", majorVersion: 0, minor: 1)  
   ]  
-)`  
+)
+```  
 Then execute command in console:
 `swift build`
 
