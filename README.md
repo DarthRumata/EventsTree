@@ -32,16 +32,29 @@ Every node can have only one parent and unlimited number of children.
 
 ### Cocoapods
 
-Write in podfile:  
+Write in podfile:
 `pod 'EventsTree'`  
 Then execute command in console:
 `pod install`
 
 ### Carthage
 
-Create Cartfile with line:  
+Create Cartfile with line:
 `github "DarthRumata/EventsTree"`  
-Then execute command in console:  
+Then execute command in console:
 `carthage update`
+
+### Swift Package Manager(can build only for macOS!)
+
+Create Package.swift file(project folders layout should match requirements):  
+`import PackageDescription  
+let package = Package(  
+  name: “Greeter”,  
+  dependencies: [    
+    .Package(url: “https://github.com/DarthRumata/EventsTree.git", majorVersion: 0, minor: 1)  
+  ]  
+)`  
+Then execute command in console:
+`swift build`
 
 # How to use
