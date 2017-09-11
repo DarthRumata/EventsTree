@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "EventsTree"
   s.module_name  = "EventsTree"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "Library for sending and handling events"
   s.description  = <<-DESC
     This library is inteded to get rid of spagetti code which comes
