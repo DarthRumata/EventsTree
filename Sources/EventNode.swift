@@ -12,6 +12,9 @@ public protocol EventDrivenInterface {
 
   func raise<T: Event>(event: T)
   func addHandler<T: Event>(_ captureMode: CaptureMode, _ handler: @escaping (T) -> Void)
+  func removeHandlers<T: Event>(for eventType: T.Type, with captureMode: CaptureMode)
+  func removeHandlers<T: Event>(for eventType: T.Type)
+  func removeAllHandlers()
 
 }
 
@@ -33,13 +36,17 @@ protocol EventHandler {}
 private struct EventHandlerContainer<E: Event>: EventHandler {
 
   private let handler: (E) -> Void
-  private let typeName: String
   private let handlerCaptureMode: CaptureMode
 
-  func canHandle(event: E, with mode: CaptureMode) -> Bool {
+  init(handler: @escaping (E) -> Void, captureMode: CaptureMode) {
+    self.handler = handler
+    handlerCaptureMode = captureMode
+  }
+
+  func canHandle(with mode: CaptureMode) -> Bool {
     var mode = mode
     mode.subtract(.consumeEvent)
-    return event.type == self.typeName && !mode.intersection(handlerCaptureMode).isEmpty
+    return !mode.intersection(handlerCaptureMode).isEmpty
   }
 
   func handle(event: E, metadata: EventMetadata) {
@@ -47,16 +54,6 @@ private struct EventHandlerContainer<E: Event>: EventHandler {
     if handlerCaptureMode.contains(.consumeEvent) {
       metadata.isHandled = true
     }
-  }
-
-  init(handler: @escaping (E) -> Void, captureMode: CaptureMode) {
-    self.handler = handler
-    typeName = EventHandlerContainer.typeName(of: E.self)
-    handlerCaptureMode = captureMode
-  }
-
-  private static func typeName(of type: E.Type) -> String {
-    return String(reflecting: type)
   }
 
 }
@@ -104,6 +101,28 @@ open class EventNode: EventDrivenInterface {
     let container = EventHandlerContainer(handler: handler, captureMode: captureMode)
     eventHandlers.append(container)
   }
+
+  public func removeHandlers<T>(for eventType: T.Type) where T : Event {
+    for index in 0..<eventHandlers.count {
+      let eventHandler = eventHandlers[index]
+      if eventHandler is EventHandlerContainer<T> {
+        eventHandlers.remove(at: index)
+      }
+    }
+  }
+
+  public func removeHandlers<T>(for eventType: T.Type, with captureMode: CaptureMode) where T : Event {
+    for index in 0..<eventHandlers.count {
+      let eventHandler = eventHandlers[index]
+      if let handlerContainer = eventHandler as? EventHandlerContainer<T>, handlerContainer.canHandle(with: captureMode) {
+        eventHandlers.remove(at: index)
+      }
+    }
+  }
+
+  public func removeAllHandlers() {
+    eventHandlers.removeAll()
+  }
   
 }
 
@@ -123,7 +142,7 @@ private extension EventNode {
       if
         !metadata.isHandled,
         let container = eventHandler as? EventHandlerContainer<E>,
-        container.canHandle(event: event, with: mode)
+        container.canHandle(with: mode)
       {
         container.handle(event: event, metadata: metadata)
       }
