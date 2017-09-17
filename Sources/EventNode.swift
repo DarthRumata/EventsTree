@@ -107,11 +107,12 @@ open class EventNode: EventDrivenInterface {
   }
 
   public func removeHandlers<T>(for eventType: T.Type, with captureMode: CaptureMode) where T : Event {
-    for index in 0..<eventHandlers.count {
-      let eventHandler = eventHandlers[index]
+    eventHandlers = eventHandlers.filter { eventHandler in
       if let handlerContainer = eventHandler as? EventHandlerContainer<T>, handlerContainer.canHandle(with: captureMode) {
-        eventHandlers.remove(at: index)
+        return false
       }
+
+      return true
     }
   }
 
