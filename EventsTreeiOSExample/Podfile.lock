@@ -1,15 +1,25 @@
 PODS:
   - AMPopTip (2.1.6)
-  - EventsTree (0.1.3)
+  - EventsTree (0.1.4)
 
 DEPENDENCIES:
   - AMPopTip (= 2.1.6)
-  - EventsTree (~> 0.1)
+  - EventsTree (from `https://github.com/DarthRumata/EventsTree.git`, branch `develop`)
+
+EXTERNAL SOURCES:
+  EventsTree:
+    :branch: develop
+    :git: https://github.com/DarthRumata/EventsTree.git
+
+CHECKOUT OPTIONS:
+  EventsTree:
+    :commit: c3accca389687ff7c42567fbf3ec7ada3a8498f6
+    :git: https://github.com/DarthRumata/EventsTree.git
 
 SPEC CHECKSUMS:
   AMPopTip: 81f57556ae12500d30ff595078b1b6d11076ced8
-  EventsTree: c9199f987f464101ab010bd7e54e64d6700c90ab
+  EventsTree: f3602baa38867a915326d4875fcbc8fedbd89682
 
-PODFILE CHECKSUM: 9de0c9600161eed09260d946aa90713e846120b8
+PODFILE CHECKSUM: f21fb38dc6ca955c2f65d059b13df04d9ecc815d
 
 COCOAPODS: 1.2.1

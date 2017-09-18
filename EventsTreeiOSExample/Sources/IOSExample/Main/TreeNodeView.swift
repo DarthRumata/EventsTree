@@ -13,14 +13,11 @@ import AMPopTip
 
 extension TreeNodeView {
 
-  enum Event: EventsTree.Event {
-    case nodeSelected(TreeNodeView?)
-    case bubbleUserEvent(SharedTime)
+  enum Events {
+    struct NodeSelected: Event { let view: TreeNodeView? }
+    struct EventImitationStarted: Event { let sharedTime: SharedTime }
+    struct UserGeneratedEventRaised: Event {}
   }
-
-  /// This is hack needed to avoid consuming all events in Event
-  /// There is a big lack of current implementation - need to be fixed
-  struct UserGeneratedEvent: EventsTree.Event {}
 
   class SharedTime {
     var startTime: DispatchTime = .now()
@@ -40,85 +37,7 @@ class TreeNodeView: UIView {
 
   var eventNode: EventNode! {
     didSet {
-      eventNode.addHandler { [weak self] (event: Event) in
-        guard let strongSelf = self else {
-          return
-        }
-
-        if case .nodeSelected(let view) = event {
-          let newState: SelectedState = view == strongSelf ? .selected : .normal
-          if strongSelf.selectedState == newState {
-            return
-          }
-
-          strongSelf.selectedState = newState
-        }
-      }
-
-      eventNode.addHandler { [weak self] (event: MainViewController.Event) in
-        guard let strongSelf = self else {
-          return
-        }
-
-        guard strongSelf.selectedState == .selected else {
-          return
-        }
-
-        switch event {
-        case .userSentEvent:
-          strongSelf.eventNode.raise(event: Event.bubbleUserEvent(SharedTime()))
-          strongSelf.eventNode.raise(event: UserGeneratedEvent())
-
-        case .userAddedHandler(let handlerInfo):
-          strongSelf.eventNode.addHandler(handlerInfo.handlerMode) { (event: UserGeneratedEvent) in
-            strongSelf.popTip.show(
-              text: handlerInfo.tipText,
-              direction: .down,
-              maxWidth: 150,
-              in: strongSelf.superview!,
-              from: strongSelf.frame,
-              duration: 2
-            )
-          }
-        }
-      }
-
-      eventNode.addHandler(.onPropagate) { [weak self] (event: Event) in
-        guard let strongSelf = self else {
-          return
-        }
-
-        if case .bubbleUserEvent(let sharedTime) = event {
-          /// TODO: Need to provide more convient implimentation via separate serial queue
-          let scheduledTime = sharedTime.startTime
-          sharedTime.startTime = sharedTime.startTime + 1
-          DispatchQueue.main.asyncAfter(deadline: scheduledTime) {
-            strongSelf.highlightedState = .onPropagate
-            DispatchQueue.main.asyncAfter(deadline: scheduledTime + 1) {
-              strongSelf.highlightedState = .none
-            }
-          }
-        }
-      }
-
-      eventNode.addHandler(.onRaise) { [weak self] (event: Event) in
-        guard let strongSelf = self else {
-          return
-        }
-
-        if case .bubbleUserEvent(let sharedTime) = event {
-          let scheduledTime = sharedTime.startTime
-          sharedTime.startTime = sharedTime.startTime + 1
-          DispatchQueue.main.asyncAfter(deadline: scheduledTime) {
-            strongSelf.highlightedState = .onRaise
-            DispatchQueue.main.asyncAfter(deadline: scheduledTime + 1) {
-              if strongSelf.highlightedState == .onRaise {
-                strongSelf.highlightedState = .none
-              }
-            }
-          }
-        }
-      }
+      addInitialHandlers()
     }
   }
 
@@ -136,7 +55,7 @@ class TreeNodeView: UIView {
       updateIcon()
     }
   }
-  private let popTip = PopTip()
+  fileprivate let popTip = PopTip()
 
   // MARK: Init
 
@@ -159,13 +78,13 @@ class TreeNodeView: UIView {
   // MARK: Actions
 
   @IBAction func didTapOnView() {
-    let event = Event.nodeSelected(self)
+    let event = Events.NodeSelected(view: self)
     eventNode.raise(event: event)
   }
 
 }
 
-private extension TreeNodeView {
+fileprivate extension TreeNodeView {
 
   /// TODO: Can be optimized by merging to states in OptionSet
   enum SelectedState {
@@ -191,6 +110,87 @@ private extension TreeNodeView {
       case .onPropagate: return UIImage(named: "arrowDown")
       case .onRaise: return UIImage(named: "arrowUp")
       case .none: return nil
+      }
+    }
+  }
+
+  func addInitialHandlers() {
+    eventNode.addHandler { [weak self] (event: Events.NodeSelected) in
+      guard let strongSelf = self else { return }
+
+      let newState: SelectedState = event.view == strongSelf ? .selected : .normal
+
+      if strongSelf.selectedState != newState {
+        strongSelf.selectedState = newState
+      }
+    }
+
+    eventNode.addHandler { [weak self] (event: MainViewController.Events.AddHandler) in
+      guard let strongSelf = self else { return }
+      guard strongSelf.selectedState == .selected else { return }
+
+      let handlerInfo = event.info
+      strongSelf.eventNode.addHandler(handlerInfo.handlerMode) { (event: Events.UserGeneratedEventRaised) in
+        strongSelf.popTip.show(
+          text: handlerInfo.tipText,
+          direction: .down,
+          maxWidth: 150,
+          in: strongSelf.superview!,
+          from: strongSelf.frame,
+          duration: 2
+        )
+      }
+    }
+
+    eventNode.addHandler { [weak self] (event: MainViewController.Events.SendTestEvent) in
+      guard let strongSelf = self else { return }
+      guard strongSelf.selectedState == .selected else { return }
+
+      let flowImitationEvent = Events.EventImitationStarted(sharedTime: SharedTime())
+      strongSelf.eventNode.raise(event: flowImitationEvent)
+      let userEvent = Events.UserGeneratedEventRaised()
+      strongSelf.eventNode.raise(event: userEvent)
+    }
+
+    eventNode.addHandler { [weak self] (event: MainViewController.Events.RemoveHandler) in
+      guard let strongSelf = self else { return }
+      guard strongSelf.selectedState == .selected else { return }
+
+      strongSelf.eventNode.removeHandlers(for: Events.UserGeneratedEventRaised.self)
+    }
+
+    eventNode.addHandler(.onPropagate) { [weak self] (event: Events.EventImitationStarted) in
+      guard let strongSelf = self else {
+        return
+      }
+
+      /// TODO: Need to provide more convient implimentation via separate serial queue
+      let sharedTime = event.sharedTime
+      let scheduledTime = sharedTime.startTime
+      sharedTime.startTime = sharedTime.startTime + 1
+      DispatchQueue.main.asyncAfter(deadline: scheduledTime) {
+        strongSelf.highlightedState = .onPropagate
+        DispatchQueue.main.asyncAfter(deadline: scheduledTime + 1) {
+          strongSelf.highlightedState = .none
+        }
+      }
+    }
+
+    eventNode.addHandler(.onRaise) { [weak self] (event: Events.EventImitationStarted) in
+      guard let strongSelf = self else {
+        return
+      }
+
+      let sharedTime = event.sharedTime
+      let scheduledTime = sharedTime.startTime
+      sharedTime.startTime = sharedTime.startTime + 1
+      DispatchQueue.main.asyncAfter(deadline: scheduledTime) {
+        strongSelf.highlightedState = .onRaise
+        DispatchQueue.main.asyncAfter(deadline: scheduledTime + 1) {
+          if strongSelf.highlightedState == .onRaise {
+            strongSelf.highlightedState = .none
+          }
+        }
       }
     }
   }

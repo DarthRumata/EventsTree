@@ -2,6 +2,7 @@ import XCTest
 @testable import EventsTree
 
 struct TestEvent: Event {}
+struct WrongEvent: Event {}
 
 class EventsTreeTests: XCTestCase {
 
@@ -12,7 +13,6 @@ class EventsTreeTests: XCTestCase {
   func testEventCanBeHandledOnPropagate() {
     let node = EventNode(parent: nil)
     let expectation = XCTestExpectation(description: "Event is captured")
-    expectation.expectedFulfillmentCount = 1
     node.addHandler { (event: TestEvent) in
       expectation.fulfill()
     }
@@ -21,6 +21,35 @@ class EventsTreeTests: XCTestCase {
     let result = XCTWaiter().wait(for: [expectation], timeout: 0.1)
 
     XCTAssert(result == .completed, "Event isn't captured")
+  }
+
+  func testWrongEventCantBeHandledOnPropagate() {
+    let node = EventNode(parent: nil)
+    let expectation = XCTestExpectation(description: "Event isn't captured")
+    expectation.isInverted = true
+    node.addHandler { (event: TestEvent) in
+      expectation.fulfill()
+    }
+    node.raise(event: WrongEvent())
+
+    let result = XCTWaiter().wait(for: [expectation], timeout: 0.1)
+
+    XCTAssert(result == .completed, "Wrong event is captured")
+  }
+
+  func testEventCantBeHandledAfterHandlerDeletion() {
+    let node = EventNode(parent: nil)
+    let expectation = XCTestExpectation(description: "Event isn't captured")
+    expectation.isInverted = true
+    node.addHandler { (event: TestEvent) in
+      expectation.fulfill()
+    }
+    node.removeHandlers(for: TestEvent.self)
+    node.raise(event: TestEvent())
+
+    let result = XCTWaiter().wait(for: [expectation], timeout: 0.1)
+
+    XCTAssert(result == .completed, "Deleted event is captured")
   }
 
 }
