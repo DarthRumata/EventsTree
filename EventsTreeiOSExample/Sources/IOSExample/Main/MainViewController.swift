@@ -11,9 +11,10 @@ import EventsTree
 
 extension MainViewController {
 
-  enum Event: EventsTree.Event {
-    case userSentEvent
-    case userAddedHandler(HandlerInfo)
+  enum Events {
+    struct SendTestEvent: Event {}
+    struct AddHandler: Event { let info: HandlerInfo }
+    struct RemoveHandler: Event {}
   }
   
 }
@@ -38,9 +39,9 @@ class MainViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    /// Also just a demo version. In real app you should create
-    /// subclass of EventNode as some Model/Logic class 
-    /// in the same time as its Module created
+    /// Also just a demo version. In real app you should inject
+    /// instance of EventNode in some Model/Logic class
+    /// at the same time as its Module created
     let rootEventNode = EventNode(parent: nil)
     rootNodeView.eventNode = rootEventNode
     rightBranchOne.eventNode = EventNode(parent: rootEventNode)
@@ -50,10 +51,9 @@ class MainViewController: UIViewController {
     leftBranchTwo.eventNode = secondLeftEventNode
     leftBranchThree.eventNode = EventNode(parent: secondLeftEventNode)
 
-    /// DEMO: much better have separate subclass of EventNode for this screen
-    rootEventNode.addHandler { (event: TreeNodeView.Event) in
-      if case .nodeSelected(let view) = event, view != nil {
-        self.changeToolbarState(to: .shown)
+    rootEventNode.addHandler { [weak self] (event: TreeNodeView.Events.NodeSelected) in
+      if event.view != nil {
+        self?.changeToolbarState(to: .shown)
       }
     }
 
@@ -69,14 +69,17 @@ class MainViewController: UIViewController {
     let destinationId = String(describing: AddHandlerViewController.self)
     let controller = storyboard.instantiateViewController(withIdentifier: destinationId) as! AddHandlerViewController
     controller.saveHandler = { [weak self] handlerInfo in
-      let event = Event.userAddedHandler(handlerInfo)
+      let event = Events.AddHandler(info: handlerInfo)
       self?.rootNodeView.eventNode.raise(event: event)
     }
     present(controller, animated: true, completion: nil)
   }
 
+  @IBAction func removeHandler(_ sender: Any) {
+    rootNodeView.eventNode.raise(event: Events.RemoveHandler())
+  }
   @IBAction func didTapRaiseEvent(_ sender: Any) {
-    rootNodeView.eventNode.raise(event: Event.userSentEvent)
+    rootNodeView.eventNode.raise(event: Events.SendTestEvent())
   }
 
 }
@@ -113,7 +116,7 @@ private extension MainViewController {
   @objc func didTapOnScreen() {
     changeToolbarState(to: .hidden)
     /// DEMO: better to use event from that class where it is emitted
-    rootNodeView.eventNode.raise(event: TreeNodeView.Event.nodeSelected(nil))
+    rootNodeView.eventNode.raise(event: TreeNodeView.Events.NodeSelected(view: nil))
   }
 
 }

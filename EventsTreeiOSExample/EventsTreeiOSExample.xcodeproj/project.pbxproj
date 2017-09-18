@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		298E0C1F9EA4CF99D3A11654 /* Pods_IOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95AAEB092113AA4EDD1146EE /* Pods_IOSExample.framework */; };
 		9228A7841F03143000985134 /* AddHandlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7751F03143000985134 /* AddHandlerViewController.swift */; };
 		9228A7851F03143000985134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7761F03143000985134 /* AppDelegate.swift */; };
 		9228A7861F03143000985134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7771F03143000985134 /* Assets.xcassets */; };
@@ -17,12 +18,13 @@
 		9228A78B1F03143000985134 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7811F03143000985134 /* MainViewController.swift */; };
 		9228A78C1F03143000985134 /* TreeNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7821F03143000985134 /* TreeNodeView.swift */; };
 		9228A78D1F03143000985134 /* TreeNodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7831F03143000985134 /* TreeNodeView.xib */; };
-		F95A79D73B8455DBE456E2F8 /* Pods_EventsTreeiOSExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EFC25441ED9DDB8134DD61 /* Pods_EventsTreeiOSExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		153AA5998ED34A084A57751A /* Pods_EventNodeExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventNodeExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18A991FE80759882AF78D28C /* Pods-IOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample.debug.xcconfig"; sourceTree = "<group>"; };
 		1907898DFE1ADB0CC95F3913 /* Pods-EventsTreeiOSExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsTreeiOSExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventsTreeiOSExampleTests/Pods-EventsTreeiOSExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		294A5DCAAAFA7CD37E703C0A /* Pods-IOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample.release.xcconfig"; sourceTree = "<group>"; };
 		38EFC25441ED9DDB8134DD61 /* Pods_EventsTreeiOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsTreeiOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2B8DAAA45663AD69C5F782 /* Pods-EventNodeExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExample/Pods-EventNodeExample.release.xcconfig"; sourceTree = "<group>"; };
 		750CCC70BB759AF9A202C469 /* Pods-EventNodeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExample/Pods-EventNodeExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 		9228A7821F03143000985134 /* TreeNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeView.swift; sourceTree = "<group>"; };
 		9228A7831F03143000985134 /* TreeNodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeNodeView.xib; sourceTree = "<group>"; };
 		92C763C21EFACBF9007F2C30 /* IOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95AAEB092113AA4EDD1146EE /* Pods_IOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		984B62A462ABDDE309FFA395 /* Pods-EventsTreeiOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventsTreeiOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A048893C41867DEFDABF3E13 /* Pods-EventNodeExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		ADD2FCFE8264F8EDD8BD0B8D /* Pods-EventNodeExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventNodeExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventNodeExampleTests/Pods-EventNodeExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -52,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F95A79D73B8455DBE456E2F8 /* Pods_EventsTreeiOSExample.framework in Frameworks */,
+				298E0C1F9EA4CF99D3A11654 /* Pods_IOSExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 				BB2B699077A846A869AD681A /* Pods_EventNodeExampleTests.framework */,
 				38EFC25441ED9DDB8134DD61 /* Pods_EventsTreeiOSExample.framework */,
 				ED2BFF51656F40B6316A038D /* Pods_EventsTreeiOSExampleTests.framework */,
+				95AAEB092113AA4EDD1146EE /* Pods_IOSExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,6 +85,8 @@
 				8E4EE5648053AE9704993210 /* Pods-EventsTreeiOSExample.release.xcconfig */,
 				F75DBA99894B76D0EE6BD080 /* Pods-EventsTreeiOSExampleTests.debug.xcconfig */,
 				1907898DFE1ADB0CC95F3913 /* Pods-EventsTreeiOSExampleTests.release.xcconfig */,
+				18A991FE80759882AF78D28C /* Pods-IOSExample.debug.xcconfig */,
+				294A5DCAAAFA7CD37E703C0A /* Pods-IOSExample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -102,7 +108,6 @@
 				9228A7781F03143000985134 /* LaunchScreen.storyboard */,
 				9228A77A1F03143000985134 /* Main.storyboard */,
 				9228A77C1F03143000985134 /* External */,
-				9228A77E1F03143000985134 /* Flows */,
 				9228A77F1F03143000985134 /* Info.plist */,
 				9228A7801F03143000985134 /* Main */,
 			);
@@ -123,13 +128,6 @@
 				9228A77D1F03143000985134 /* MWSegmentedControl.swift */,
 			);
 			path = External;
-			sourceTree = "<group>";
-		};
-		9228A77E1F03143000985134 /* Flows */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Flows;
 			sourceTree = "<group>";
 		};
 		9228A7801F03143000985134 /* Main */ = {
@@ -248,7 +246,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		59B4BC437E80EFD3C715F29C /* [CP] Embed Pods Frameworks */ = {
@@ -263,7 +261,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventsTreeiOSExample/Pods-EventsTreeiOSExample-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE7B219573F162C3C85B06DA /* [CP] Check Pods Manifest.lock */ = {
@@ -415,7 +413,7 @@
 		};
 		92C763E01EFACBF9007F2C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 984B62A462ABDDE309FFA395 /* Pods-EventsTreeiOSExample.debug.xcconfig */;
+			baseConfigurationReference = 18A991FE80759882AF78D28C /* Pods-IOSExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4GS5NBU7N5;
@@ -430,7 +428,7 @@
 		};
 		92C763E11EFACBF9007F2C30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E4EE5648053AE9704993210 /* Pods-EventsTreeiOSExample.release.xcconfig */;
+			baseConfigurationReference = 294A5DCAAAFA7CD37E703C0A /* Pods-IOSExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4GS5NBU7N5;

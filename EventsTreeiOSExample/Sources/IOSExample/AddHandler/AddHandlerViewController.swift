@@ -20,7 +20,7 @@ class AddHandlerViewController: UIViewController {
   var saveHandler: ((HandlerInfo) -> Void)!
 
   @IBOutlet fileprivate weak var tipTextField: UITextField!
-  /// DEMO: MWSegmentedControl is bad component - don't use it in prodaction
+  /// DEMO: MWSegmentedControl is bad component - don't use it in production
   @IBOutlet fileprivate weak var captureModePicker: MWSegmentedControl!
   @IBOutlet fileprivate weak var errorMessageLabel: UILabel!
 
