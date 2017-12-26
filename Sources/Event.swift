@@ -15,7 +15,7 @@ public protocol Event {
 public extension Event {
 
   var type: String {
-    return String(reflecting: type(of: self))
+    return String(reflecting: Swift.type(of: self))
   }
 
 }
