@@ -14,7 +14,6 @@
 		9228A7871F03143000985134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7781F03143000985134 /* LaunchScreen.storyboard */; };
 		9228A7881F03143000985134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9228A77A1F03143000985134 /* Main.storyboard */; };
 		9228A7891F03143000985134 /* MWSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A77D1F03143000985134 /* MWSegmentedControl.swift */; };
-		9228A78A1F03143000985134 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9228A77F1F03143000985134 /* Info.plist */; };
 		9228A78B1F03143000985134 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7811F03143000985134 /* MainViewController.swift */; };
 		9228A78C1F03143000985134 /* TreeNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9228A7821F03143000985134 /* TreeNodeView.swift */; };
 		9228A78D1F03143000985134 /* TreeNodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9228A7831F03143000985134 /* TreeNodeView.xib */; };
@@ -171,7 +170,6 @@
 				92C763BF1EFACBF9007F2C30 /* Frameworks */,
 				92C763C01EFACBF9007F2C30 /* Resources */,
 				59B4BC437E80EFD3C715F29C /* [CP] Embed Pods Frameworks */,
-				3354905DA43DBADDD8F0B75D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,7 +193,7 @@
 					92C763C11EFACBF9007F2C30 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4GS5NBU7N5;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -224,7 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9228A78D1F03143000985134 /* TreeNodeView.xib in Resources */,
-				9228A78A1F03143000985134 /* Info.plist in Resources */,
 				9228A7881F03143000985134 /* Main.storyboard in Resources */,
 				9228A7861F03143000985134 /* Assets.xcassets in Resources */,
 				9228A7871F03143000985134 /* LaunchScreen.storyboard in Resources */,
@@ -234,34 +231,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3354905DA43DBADDD8F0B75D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		59B4BC437E80EFD3C715F29C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSExample/Pods-IOSExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AMPopTip/AMPopTip.framework",
+				"${BUILT_PRODUCTS_DIR}/EventsTree/EventsTree.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMPopTip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EventsTree.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExample/Pods-IOSExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSExample/Pods-IOSExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EE7B219573F162C3C85B06DA /* [CP] Check Pods Manifest.lock */ = {
@@ -270,13 +257,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -422,7 +412,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -437,7 +428,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = darthrumata.com.EventNodeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

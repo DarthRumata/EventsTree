@@ -6,10 +6,15 @@ DEPENDENCIES:
   - AMPopTip (= 2.1.6)
   - EventsTree (= 0.2.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AMPopTip
+    - EventsTree
+
 SPEC CHECKSUMS:
   AMPopTip: 81f57556ae12500d30ff595078b1b6d11076ced8
   EventsTree: 1c23c96940e06c64c04cb596d92d5d36d3572a39
 
 PODFILE CHECKSUM: 55da609fe19ac9faf9c47655bc74e0973d35e8c4
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.6.1

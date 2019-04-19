@@ -60,7 +60,7 @@ class MWSegmentedControl: UIView {
     }
   }
 
-  func changeSegment(sender: UIButton) {
+  @objc func changeSegment(sender: UIButton) {
     if allowMultipleSelection {
       if sender.backgroundColor == borderColor {
         sender.backgroundColor = UIColor.clear
